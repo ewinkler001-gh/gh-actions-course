@@ -4,3 +4,9 @@ GitHub Actions consist of:
 Workflows
 Jobs
 Steps
+
+Workflow Events
+
+Repository events
+Manual Trigger: from UI, API or another workflow
+Schedule
