@@ -7,4 +7,5 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: echo event
-        run: echo "Event name: ${{ env.GITHUB_EVENT_NAME }}"
+        run: echo "Event name:"
+        # run: echo "Event name: ${{ env.GITHUB_EVENT_NAME }}"
