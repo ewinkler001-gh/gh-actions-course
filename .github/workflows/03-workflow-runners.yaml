@@ -1,7 +1,7 @@
 name: 03 - Workflow Runners
 
 on:
-  workflow-dispatch:
+  workflow_dispatch:
 
 jobs:
   ubunto-echo:
