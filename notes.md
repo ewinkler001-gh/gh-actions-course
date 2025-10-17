@@ -1,9 +1,9 @@
 # Notes
 
 # GitHub Actions consist of:
-Workflows
-Jobs
-Steps
+- Workflows
+- Jobs
+- Steps
 
 # Workflow Events
 - Repository events
