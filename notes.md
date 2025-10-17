@@ -15,7 +15,7 @@ Steps
 - Windows
 - Ubuntu
 - Mac
-## Why use them 
+## Why use them GitHub-Hosted runners
  - managed service
  - VM is scoped to a job
  - always run on a clean instance
