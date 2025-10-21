@@ -37,4 +37,18 @@ Custom applications to perform complex, frequently reapeated tasks.
 - can create our own actions for public or private use
 - Market place has public actions
 
-
+# Event Filters
+- Specify which condition a specific event triggers the workflow
+- Can be push to a branch, creations of a PR, etc.
+- Filters can specify a specific branch, tag, path trigger a workflow
+- Can also specify which ones to ignore branch_ignore, tags_ignore, paths_ignore
+- branches:
+-   - mian
+    - 'releases/**'
+  
+# Activity Types
+- Specify which type of certain triggers execute our workflow
+- for example a pull request has types like, open, closed, synchronize, labled, assigned, edited.
+- pull_request:
+-   types: [opened, synchronized]
+- Creates an OR condition
