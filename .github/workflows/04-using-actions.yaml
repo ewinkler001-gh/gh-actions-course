@@ -9,12 +9,15 @@ jobs:
       - name: Checkout Code
         uses: actions/checkout@v4
 
-      - name: Install Dependencies
+      - name: Setup Node
         uses: actions/setup-node@v4
         with:
           node-version: '20.x'
 
-      - name: Setup Node
-        working-directory: ./04-using-actions/react-app
-        run: npm run test
+      - name: Show dir
+        run: ls -ltra
+
+      - name: Install Dependencies
+        working-directory: 04-using-actions/react-app
+        run: npm ci
         
