@@ -52,3 +52,23 @@ Custom applications to perform complex, frequently reapeated tasks.
 - pull_request:
 -   types: [opened, synchronized]
 - Creates an OR condition
+
+# Workflow Contexts
+Access information about runs, variables, jobs and much more.
+- GitHub provides multiple sources of data in different conexts
+  ## github
+    - commit SHA
+    - Event name
+    - Ref of branch or tag triggering workflow
+  ## env
+    - Contains variable that have been defined in a workflow, job or step.
+    - Changes based on which part of the workflow is executing
+  ## inputs
+    - Contains input properties passed via the keyword with to an action, toa reusable workflow or to a manually triggered workflow.
+  ## vars
+    - Contains custom configuration variables set at the organization, repository and environment levels.
+  ## Secrets, matrix, needs and more.
+
+  - Look at GitHub documentation for contexts
+  
+
