@@ -18,6 +18,6 @@ jobs:
           echo "Run ID: ${{ github.run_id }}"
           echo "Run number: ${{ github.run_number }}"
       - name: Retrieve Variable
-        run: echo "${{ vars.MY_VARS }}"
+        run: echo "myvar ${{ vars.MY_VAR }}"
         
   
