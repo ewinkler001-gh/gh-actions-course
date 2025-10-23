@@ -70,5 +70,13 @@ Access information about runs, variables, jobs and much more.
   ## Secrets, matrix, needs and more.
 
   - Look at GitHub documentation for contexts
+ 
+  # Expressions
+  - Allow us to use dynamic values
+  - Can be used to reference information from multiple sources within the workflow
+  - Must use the ${{ <expression> }}
+  - can be any combination of literal vaues, context values, functions
+  - Suppor the use of operators such as !, <,>, !+, &&, || and more
+  - if: ${{ expresson }} == "value"
   
 
