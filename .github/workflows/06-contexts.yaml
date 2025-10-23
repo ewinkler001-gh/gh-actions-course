@@ -39,13 +39,13 @@ jobs:
         env:
           MY_OVERWRITTEN_VAR: step
         run: |
-          echo: "Workflow env: $MY_WORKFLOW_VAR"
-          echo: "Overwritten env: $MY_OVERWRITTEN_VAR"
+          echo "Workflow env: $MY_WORKFLOW_VAR"
+          echo "Overwritten env: $MY_OVERWRITTEN_VAR"
       
       - name: Print Env Var 2
         run: |
-          echo: "Workflow env: $MY_WORKFLOW_VAR"
-          echo: "Overwritten env: $MY_OVERWRITTEN_VAR"
+          echo "Workflow env: $MY_WORKFLOW_VAR"
+          echo "Overwritten env: $MY_OVERWRITTEN_VAR"
           
         
   
