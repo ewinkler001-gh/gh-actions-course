@@ -8,7 +8,7 @@ on:
         type: boolean
         default: false
         
-# run-name: 06 - Contexts | DEBUG - ${{ inputs.debug }}
+run-name: 06 - Contexts | DEBUG - ${{ inputs.debug }}
 
 env:
   MY_WORKFLOW_VAR: workflow
@@ -34,14 +34,14 @@ jobs:
         run: echo "myvar ${{ vars.MY_VAR }}"
       - name: Print Env Variables
         env:
-          My_OVERWRITTEN_VAR: step
+          MY_OVERWRITTEN_VAR: step
         run: |
           echo: "Workflow env: $MY_WORKFLOW_VAR"
-          echo: "Overwritten env: MY_OVERWRITTEN_VAR"
+          echo: "Overwritten env: $MY_OVERWRITTEN_VAR"
       - name: Print Env Var 2
         run: |
           echo: "Workflow env: $MY_WORKFLOW_VAR"
-          echo: "Overwritten env: MY_OVERWRITTEN_VAR"
+          echo: "Overwritten env: $MY_OVERWRITTEN_VAR"
           
         
   
