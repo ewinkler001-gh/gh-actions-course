@@ -8,7 +8,7 @@ on:
         type: boolean
         default: false
         
-run-name: 06 - Contexts | DEBUG - ${{ inputs.debug }}
+# run-name: 06 - Contexts | DEBUG - ${{ inputs.debug }}
 
 env:
   MY_WORKFLOW_VAR: workflow
