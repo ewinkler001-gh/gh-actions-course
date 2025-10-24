@@ -78,5 +78,11 @@ Access information about runs, variables, jobs and much more.
   - can be any combination of literal vaues, context values, functions
   - Suppor the use of operators such as !, <,>, !+, &&, || and more
   - if: ${{ expresson }} == "value"
+ 
+    # Variables
+    - Used to set and reuse non-sensitive information
+    - Single workflow - workflow level, job level, step level
+    - Multiple workflows - Organization level, repository level, environment level
+      - must be accesses using the vars context vars.variablename
   
 
