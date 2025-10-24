@@ -9,7 +9,7 @@ env:
   OVERWRITTEN: "I will be overwritten"
 
 jobs:
-  echo:
+  echo-data:
     runs-on: ubuntu-latest
     env:
       JOB_VAR: "I am a job env var"
