@@ -16,7 +16,7 @@ jobs:
       OVERWRITTEN: "I have been overwritten at the job level"
 
     steps:
-      - name: Print Env Variables
+      - name: "Print Env Variables"
         env:
           STEP_VAR: "I am a step env var"
           step_var2: "I am another step var"
@@ -26,7 +26,7 @@ jobs:
           echo: "Job env var: $JOB_VAR"
           echo: "Workflow env var: $WORKFLOW_VAR"
           echo: "Overwritten: $OVERWRITTEN"
-      - name: Overwrite Job Variable
+      - name: "Overwrite Job Variable"
         env:
           OVERWRITTEN: "I have been overwritten at the step level"
         run: |
